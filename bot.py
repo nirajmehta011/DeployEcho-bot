@@ -1,7 +1,9 @@
 import logging
 
 # Force Python to print all INFO and DEBUG logs to the terminal
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(
+    level=logging.INFO, 
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
 import os
 import re
